@@ -16,7 +16,7 @@
 		<h3 class="text-muted">Bookmarker</h3>
 		<div class="jumbotron">
 			<h2>Bookmark Your Favorite Sites</h2>
-			<form>
+			<form id="myForm">
 				<div class="form-group">
 					<label>Site Name</label>
 					<input class="form-control" type="text" name="Site Name" id="siteName" placeholder="Enter Website Name">
@@ -27,10 +27,14 @@
 				</div>
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
-			<div id="bookmarksResult">
-				
-			</div>
+		</div>	
+		<input type="text" class="form-control" name="filter" id="filter" placeholder="Search for Bookmarks...">
+		<br>
+
+		<div>
+			<ul class="list-group" id="bookmarksResult"></ul>
 		</div>
+			
 		<footer>&copy; 2018 Bookmarker</footer>
 	</div>
 	<script src="main.js"></script>
